@@ -28,6 +28,6 @@ if (!requireNamespace("devtools", quietly = TRUE)) {
 }
 
 # Install the package from GitHub
-devtools::install_github("mariusvachia/LeadTime-TumorGrowthModel-article", subdir = "LeadTime")
+devtools::install_github("mariusvachia/LeadTime-TumorGrowthModel-Article", subdir = "LeadTime")
 ```
 
