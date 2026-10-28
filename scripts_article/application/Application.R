@@ -283,7 +283,9 @@ summary(cor_normal_2009_0.1_cancer_deaths$survival$sym, times = c(2,5))
 
 sum(cor_normal_0.1_cancer_deaths$overdetected)
 sum(cor_normal_0.1_cancer_deaths$overdiagnosis)
-
+summary(cor_normal_0.1_cancer_deaths$leadtime[cor_normal_0.1_cancer_deaths$detection == 2])
+mean(cor_normal_0.1_cancer_deaths$leadtime[cor_normal_0.1_cancer_deaths$detection == 2])
+t.test(cor_normal_0.1_cancer_deaths$leadtime[cor_normal_0.1_cancer_deaths$detection == 2])$conf.int
 
 
 df <- data.frame(id = cor_normal_0.1_cancer_deaths$id,
