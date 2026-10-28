@@ -70,7 +70,3 @@ cdf_vsym <- Vectorize(cdf_vsym,"v")
 cdf_dsym <- function(d, p1, p2, p3, d0){
   return(cdf_vsym(Volume(d),p1,p2,p3,Volume(d0)))
 }
-
-# ccdf_tsym <- function(t,r,t0,eta,v0){
-#   return(pexp(v0*(exp((t-t0)/r) - 1),r*eta))
-# }
