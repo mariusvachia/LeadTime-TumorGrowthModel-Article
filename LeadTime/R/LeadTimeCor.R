@@ -221,22 +221,3 @@ LeadTimeCor <- function(data,
   class(output) <- "LeadTime"
   return(output)
 }
-
-
-# LTC <- LeadTimeCor(data_simu[1:20,],
-#                    variables=list(id = "id",
-#                                   det = "det",
-#                                   tdet = "tdet",
-#                                   ddet = "ddet",
-#                                   scr = "scr",
-#                                   tscr = "tscr",
-#                                   last = "death",
-#                                   tlast = "tdeath_w1"),
-#                    par = NULL,
-#                    model = TGM,
-#                    overdiagnosis = FALSE,
-#                    d0 = 0.5,
-#                    distribution.t0 = "normal",
-#                    initpar = NULL,
-#                    fixpar = NULL,
-#                    n_cores = 1)
