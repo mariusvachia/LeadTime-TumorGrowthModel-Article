@@ -140,26 +140,3 @@ SimuTGM <- function(n,
   data_simu$ddet <- ifelse(data_simu$ddet < d0+0.001,d0+0.001,data_simu$ddet)
   return(data_simu)
 }
-
-
-# remove.packages("LeadTime")
-# unlink("C:/Users/mariu/AppData/Local/R/win-library/4.5/LeadTime", recursive = TRUE, force = TRUE)
-
-
-# set.seed(1)
-# n <- 2000
-# p = list(p1 = 2.32, p2 = 3.00, p3 = exp(-8.75), p4 = -4.75, p5 = 0.56, p6 = 50, p7 = 12, p8 = 0.8)
-# p <- list(p1 = 2.08, p2 = 2.65, p3 = exp(-9.30), p4 = -4.36, p5 = 0.54, p6 = 50.97, p7 = 12.52)
-# data_simu <- SimuTGM(n,
-#                        p,
-#                        d0 = 0.1,
-#                        distribution.t0 = "normal",
-#                        screening_start = 50,
-#                        screening_stop = 75,
-#                        screening_interval = 2,
-#                        prob_program = 0.75,
-#                        prob_visit = 0.75,
-#                        nor1 = 0.2,
-#                        nor2 = 0.15,
-#                        surv_size = 6e-4,
-#                        surv_growth = 4e-3)
