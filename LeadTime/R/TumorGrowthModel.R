@@ -197,30 +197,3 @@ TumorGrowthModel <- function(data,
   class(model) <- "TumorGrowthModel"
   return(model)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# TGM <- TumorGrowthModel(data_simu[1:20,],
-#                         variables=list(id = "id",
-#                                        det = "det",
-#                                        tdet = "tdet",
-#                                        ddet = "ddet",
-#                                        scr = "scr",
-#                                        tscr = "tscr"),
-#                         d0 = 0.5,
-#                         distribution.t0 = "normal",
-#                         initpar = NULL,
-#                         fixpar = NULL,
-#                         integrate.r = "kronrod31",
-#                         n_cores = 10)
