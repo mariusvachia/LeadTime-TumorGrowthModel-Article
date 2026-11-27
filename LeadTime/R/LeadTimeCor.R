@@ -70,7 +70,7 @@ LeadTimeCor <- function(data,
                                              scr = variables$scr,
                                              tscr = variables$tscr),
                               d0 = d0,
-                              distribution.t0 = "normal",
+                              distribution.t0 = distribution.t0,
                               initpar=initpar,
                               fixpar=fixpar,
                               n_cores = n_cores)
